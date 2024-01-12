@@ -1,4 +1,27 @@
 {
+     "headers": [
+        {
+          "source": "/api/(.*)",
+          "headers": [
+            {
+              key: "Access-Control-Allow-Origin",
+              value: "https://www.uf4te.cn, https://uf4te.cn, https://blog.uf4te.cn, https://uf4te.github.io, https://uf4te.gitee.io, https://cloudflare.uf4te.cn"
+            },
+            {
+              key: "Access-Control-Allow-Methods",
+              value: "GET, POST, OPTIONS, PUT, DELETE"
+            },
+            {
+              key: "Access-Control-Allow-Headers",
+              value: "Content-Type, Authorization"
+            },
+            {
+              key: "Access-Control-Allow-Credentials",
+              value: "true"
+            }
+          ]
+        }
+    ]
     "env": {
         "RUNTIME": "vercel"
     },
@@ -9,3 +32,4 @@
         }
     ]
 }
+
